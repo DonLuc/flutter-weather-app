@@ -20,4 +20,10 @@ class WeatherService {
       throw "Error in retrieving current conditions";
     }
   }
+
+  String weatherIcon(int weatherIcon) {
+    final String iconURL = "https://developer.accuweather.com/weather-icons/" +
+        weatherIcon.toString();
+    return iconURL;
+  }
 }
